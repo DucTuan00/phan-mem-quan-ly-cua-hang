@@ -25,9 +25,21 @@ namespace QuanLyBanHang
 
         }
 
+        //Phần phân quyền
+        void PhanQuyen()
+        {
+            if(Const.TaiKhoan.LoaiTaiKhoan == false)
+            {
+                mnuChatLieu.Enabled = false;
+                mnuHangHoa.Enabled = false;
+                mnuNhanVien.Enabled = false;
+            }
+        }
+
         private void frmMain_Load(object sender, EventArgs e)
         {
             Functions.Connect();
+            PhanQuyen();
         }
 
         private void mnuThoat_Click(object sender, EventArgs e)
@@ -49,6 +61,8 @@ namespace QuanLyBanHang
             frm.Show();
         }
 
+        
+
         private void mnuNhanVien_Click(object sender, EventArgs e)
         {
             frmDMNhanVien frm = new frmDMNhanVien();
@@ -61,16 +75,37 @@ namespace QuanLyBanHang
             frm.Show();
         }
 
+        
+
         private void mnuHoaDonBan_Click(object sender, EventArgs e)
         {
             frmHoaDonBan frm = new frmHoaDonBan();
             frm.Show();
         }
 
-        private void mnuFindHoaDon_Click(object sender, EventArgs e)
+        
+
+        //Phần đăng xuất
+        public bool isThoat = true;
+        public event EventHandler DangXuat;
+        private void mnuDangXuat_Click(object sender, EventArgs e)
         {
-            frmTimHDBan frm = new frmTimHDBan();
-            frm.Show();
+            DangXuat(this, new EventArgs());
+            /*isThoat = false;
+            this.Close();
+            frmDangNhap frm = new frmDangNhap();
+            frm.Show();*/
         }
+
+        private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if(isThoat)
+            {
+                Functions.Disconnect();
+                Application.Exit();
+            }
+        }
+
+        
     }
 }

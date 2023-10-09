@@ -15,5 +15,5 @@ D:\DAI HOC\2023-2024\CongNghePhanMem\Project\QuanLyBanHang\QuanLyBanHang\obj\Deb
 D:\DAI HOC\2023-2024\CongNghePhanMem\Project\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmDMKhachHang.resources
 D:\DAI HOC\2023-2024\CongNghePhanMem\Project\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmDMNhanVien.resources
 D:\DAI HOC\2023-2024\CongNghePhanMem\Project\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmHoaDonBan.resources
-D:\DAI HOC\2023-2024\CongNghePhanMem\Project\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmTimHDBan.resources
 D:\DAI HOC\2023-2024\CongNghePhanMem\Project\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.ResolveComReference.cache
+D:\DAI HOC\2023-2024\CongNghePhanMem\Project\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmDangNhap.resources
